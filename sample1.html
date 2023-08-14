@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login Form</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f4f4f4;
+		}
+
+		.container {
+			max-width: 900px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			border-radius: 10px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		.left-container {
+			flex-basis: 50%;
+			padding-right: 20px;
+			box-sizing: border-box;
+		}
+
+		h2 {
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+		input[type="text"], input[type="password"] {
+			width: 100%;
+			padding: 12px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			margin-top: 10px;
+			margin-bottom: 20px;
+			font-size: 16px;
+		}
+
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			font-size: 16px;
+			width: 100%;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #45a049;
+		}
+
+		@media screen and (max-width: 768px) {
+			.container {
+				flex-direction: column;
+			}
+
+			.left-container {
+				flex-basis: 100%;
+				padding-right: 0;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="left-container">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDwlVDs3A7sZ2jeoef1VmBFViGZdlsoh1bKaLEEoDf&s" alt="login image">
+		</div>
+		<div class="right-container">
+			<h2>Login Form</h2>
+			<form>
+				<label for="username">Username:</label>
+				<input type="text" id="username" name="username" required>
+
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password" required>
+
+				<input type="submit" value="Login">
+			</form>
+			
+		</div>
+	</div>
+</body>
+</html>

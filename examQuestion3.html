@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Question 3</title>
+	<style type="text/css">
+	    
+		
+		*{
+			box-sizing: border-box;
+			 margin: 0;
+  			padding: 0;
+		}
+		.column{
+			float: left;
+			width: 50%;
+			padding: 200px 150px 100px 50px;
+			height: 1100px;
+			display: flex;
+		}
+		.left{
+			
+			background-image: linear-gradient(violet,pink);
+			width: 50%;
+			
+		}
+		form{
+			vertical-align: center;
+			padding: 20px;
+		}
+		button:hover{
+			background-color: green;
+			cursor: pointer;
+		}
+		button{
+			background-color: red;
+			color: white;
+			width: 700px;
+			height: 40px;
+			font-size: 20px;
+		}
+		input.one{
+			font-size: 20px;
+			width: 700px;
+			height: 40px;
+			padding: 20px;
+		}
+		input.two{
+			font-size: 20px;
+			height: 30px;
+		}
+		h1{
+			color: red;
+			font-size: 40px;
+			height: 70px;
+		}
+		label{
+			font-size: 30px;
+			font-weight: bold;
+		}
+	
+
+		
+		@media only screen and (max-width: 600px){
+			.left{
+				display: none;
+			}
+			.right{
+				width: 200px;
+				padding: 20px;
+			}
+			button:hover{
+			background-color: green;
+			cursor: pointer;
+		}
+		button{
+			background-color: red;
+			color: white;
+			width: 400px;
+			height: 40px;
+			font-size: 20px;
+		}
+		input.one{
+			font-size: 20px;
+			width: 400px;
+			height: 30px;
+		}
+		input.two{
+			font-size: 20px;
+		}
+		h1{
+			color: red;
+			font-size: 30px;
+
+		}
+		label{
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		}
+
+	</style>
+</head>
+<body>
+	<div class="row">
+		<div class="column left"></div>
+		<div class="column right">
+			<form>
+				<h1>Login Form</h1>
+				<label  for="email">Email</label><br><br>
+				<input  class="one" type="text" name="email" id="email"><br><br>
+				<label for="password">Password:</label><br><br>
+				<input class="one" type="password" name="password" id="Password"><br><br>
+				<input  class="two" type="checkbox" name="check">Remember me<br><br>
+				<button type="button">Login</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

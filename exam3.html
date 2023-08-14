@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Question 3</title>
+	<style type="text/css">
+	
+		
+		*{
+			box-sizing: border-box;
+			 margin: 0;
+  			padding: 0;
+		}
+		
+		.container{
+			display: flex;
+			height: 1000px;
+			width: 50%;
+		}
+		
+		.form{
+			display: flex;
+			flex-direction: column;
+			width: 40%;
+			background-color: white;
+			padding: 40px;
+			position: absolute;
+			top: 30px;
+			right: 400px;
+
+		}
+		.form h1{
+			font-size: 3rem;
+			margin: 30px;
+		}
+
+		.box{
+			padding: 5px;
+			width: 900px;
+			margin: 5px;
+		}
+		button{
+			background-color: red;
+			color: white;
+			width: 900px;
+			height: 40px;
+			font-size: 20px;
+		}
+		button:hover{
+			cursor:pointer;
+			background-color: green;
+		}
+		
+		.left{
+			
+			background-image: linear-gradient(violet,pink);
+			width: 70%;
+			
+		}
+		label{
+			font-size: 30px;
+			font-weight: bold;
+			padding: 3px;
+		}
+		@media only screen and (min-width: 600px){
+			.left{
+				display: none;
+				width: 365px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="left">
+		
+		<div class="right"></div>
+			<form class="form">
+				<h1>Login Form</h1><br><br>
+				<label  for="email">Email</label><br><br>
+				<input  class="box" type="text" name="email" id="email"><br><br>
+				<label for="password">Password:</label><br><br>
+				<input class="box type="password" name="password" id="Password"><br><br> 
+				<input  class="two" type="checkbox" name="check">Remember me<br><br>
+				<button type="button">Login</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
